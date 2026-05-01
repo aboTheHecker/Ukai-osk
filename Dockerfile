@@ -1,8 +1,10 @@
 FROM php:8.2-apache
 
-# Manually remove mpm_event to fix conflict
-RUN rm -f /etc/apache2/mods-enabled/mpm_event.conf \
-          /etc/apache2/mods-enabled/mpm_event.load
+# Disable ALL mpms first, then enable only prefork
+RUN rm -f /etc/apache2/mods-enabled/mpm_*.conf \
+          /etc/apache2/mods-enabled/mpm_*.load && \
+    ln -s /etc/apache2/mods-available/mpm_prefork.conf /etc/apache2/mods-enabled/mpm_prefork.conf && \
+    ln -s /etc/apache2/mods-available/mpm_prefork.load /etc/apache2/mods-enabled/mpm_prefork.load
 
 RUN docker-php-ext-install mysqli pdo pdo_mysql
 RUN a2enmod rewrite
