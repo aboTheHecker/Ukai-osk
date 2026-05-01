@@ -1,0 +1,23 @@
+# Database config / sensitive files
+db/ecommerce.sql
+api/auth.php
+includes/db.php
+includes/session.php
+setup.php
+.env
+
+# XAMPP / local server files
+.htaccess
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor folders
+.vscode/
+.idea/
+
+# Logs
+*.log
+error_log
