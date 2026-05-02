@@ -2,7 +2,6 @@
 --  UKAY UKAY ECOMMERCE — DATABASE SCHEMA
 -- ============================================
 CREATE DATABASE IF NOT EXISTS ecommerce_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-USE ecommerce_db;
 
 CREATE TABLE IF NOT EXISTS users (
   id          INT AUTO_INCREMENT PRIMARY KEY,
@@ -10,7 +9,7 @@ CREATE TABLE IF NOT EXISTS users (
   email       VARCHAR(100) UNIQUE NOT NULL,
   password    VARCHAR(255) NOT NULL,
   contact     VARCHAR(20)  DEFAULT '',
-  address     TEXT         DEFAULT '',
+  address     TEXT,
   role        ENUM('user','admin') DEFAULT 'user',
   created_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
@@ -77,7 +76,7 @@ CREATE TABLE IF NOT EXISTS orders (
   recipient_address TEXT NOT NULL,
   recipient_email   VARCHAR(100) NOT NULL,
   recipient_contact VARCHAR(20) NOT NULL,
-  notes             TEXT DEFAULT '',
+  notes             TEXT,
   created_at        TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
 );
@@ -96,6 +95,3 @@ CREATE TABLE IF NOT EXISTS order_items (
   FOREIGN KEY (order_id)   REFERENCES orders(id)   ON DELETE CASCADE,
   FOREIGN KEY (product_id) REFERENCES products(id) ON DELETE SET NULL
 );
--- Add seller_id to products if not exists (safe to run even if column exists)
-ALTER TABLE products ADD COLUMN IF NOT EXISTS seller_id INT DEFAULT NULL;
-ALTER TABLE products ADD CONSTRAINT fk_product_seller FOREIGN KEY (seller_id) REFERENCES users(id) ON DELETE SET NULL;
