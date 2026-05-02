@@ -30,4 +30,4 @@ RUN chown -R www-data:www-data /var/www/html
 
 EXPOSE 80
 
-CMD bash -c "nginx && php-fpm -F"
+CMD bash -c "php-fpm -D && nginx -g 'daemon off;'"
