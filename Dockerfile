@@ -28,6 +28,6 @@ RUN echo 'server { \
 
 RUN chown -R www-data:www-data /var/www/html
 
-EXPOSE 80
+CMD service nginx start && php-fpm
 
-CMD bash -c "php-fpm -D && nginx -g 'daemon off;'"
+EXPOSE 80
