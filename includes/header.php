@@ -468,9 +468,9 @@ select.field-input { cursor: pointer; }
 <!-- Mobile drawer -->
 <div class="mobile-menu" id="mobile-menu">
   <div class="mobile-menu-header">
-    <a class="mobile-menu-brand" href="products.php">
-      <img src="/Ukai_logo.PNG" alt="UKAI-OSK" style="height: 28px; width: auto; border-radius: 8px; vertical-align: middle; margin-right: 6px;">
-      UKAI<span>-OSK</span>
+    <a class="sidebar-brand-logo" href="dashboard.php">
+      <img class="sidebar-brand-img" src="/Ukai_logo.PNG" alt="UKAI-OSK">
+      <span class="sidebar-brand-text">UKAI<span>-OSK</span></span>
     </a>
     <button class="mobile-menu-close" onclick="closeMobileMenu()">✕</button>
   </div>
