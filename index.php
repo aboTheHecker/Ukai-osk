@@ -548,7 +548,6 @@ footer p { font-size: 12px; }
       <img class="sidebar-brand-img" src="/Ukai_logo.PNG" alt="UKAI-OSK">
       <span class="sidebar-brand-text">UKAI<span>-OSK</span></span>
     </a>
-  <a class="nav-logo" href="index.php">UKAI<span>-OSK</span></a>
   <div class="nav-links">
     <a class="nav-link" href="#categories">Categories</a>
     <a class="nav-link" href="#how">How It Works</a>

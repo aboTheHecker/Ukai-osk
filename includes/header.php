@@ -492,7 +492,7 @@ select.field-input { cursor: pointer; }
 <!-- NAV -->
 <nav>
   <a class="nav-brand" href="products.php">
-    <img class="nav-brand-logo" src="../Ukai_logo.png" alt="UKAI-OSK">
+    <img class="nav-brand-logo" src="/Ukai_logo.PNG" alt="UKAI-OSK">
     <span class="nav-brand-text">UKAI<span>-OSK</span></span>
   </a>
 
