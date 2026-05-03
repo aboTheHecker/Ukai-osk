@@ -544,9 +544,9 @@ footer p { font-size: 12px; }
 
 <!-- NAVBAR -->
 <nav class="nav">
-    <a class="sidebar-brand-logo" href="dashboard.php">
-      <img class="sidebar-brand-img" src="/Ukai_logo.PNG" alt="UKAI-OSK">
-      <span class="sidebar-brand-text">UKAI<span>-OSK</span></span>
+    <a class="nav-brand" href="products.php">
+      <img class="nav-brand-logo" src="/Ukai_logo.PNG" alt="UKAI-OSK">
+      <span class="nav-brand-text">UKAI<span>-OSK</span></span>
     </a>
   <div class="nav-links">
     <a class="nav-link" href="#categories">Categories</a>
