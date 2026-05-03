@@ -22,7 +22,7 @@ $total_users    = (int)($conn->query("SELECT COUNT(*) AS n FROM users WHERE role
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>UKAI-OSK — Pre-Loved Fashion</title>
-<link rel="icon" type="image/png" href="../Ukai_logo.png">
+<link rel="icon" type="image/png" href="/Ukai_logo.PNG">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -544,7 +544,10 @@ footer p { font-size: 12px; }
 
 <!-- NAVBAR -->
 <nav class="nav">
-  <a class="nav-logo" href="index.php">UKAI<span>-OSK</span></a>
+  <a class="mobile-menu-brand" href="index.php">
+      <img src="/Ukai_logo.PNG" alt="UKAI-OSK" style="height: 28px; width: auto; border-radius: 8px; vertical-align: middle; margin-right: 6px;">
+      UKAI<span>-OSK</span>
+    </a>
   <div class="nav-links">
     <a class="nav-link" href="#categories">Categories</a>
     <a class="nav-link" href="#how">How It Works</a>
