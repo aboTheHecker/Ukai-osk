@@ -9,7 +9,7 @@ $current    = basename($_SERVER['PHP_SELF']);
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" type="image/png" href="../Ukai_logo.png">
+<link rel="icon" type="image/png" href="/Ukai_logo.PNG">
 <title><?= htmlspecialchars($page_title) ?> — UKAI-OSK</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -469,7 +469,7 @@ select.field-input { cursor: pointer; }
 <div class="mobile-menu" id="mobile-menu">
   <div class="mobile-menu-header">
     <a class="mobile-menu-brand" href="products.php">
-      <img src="../Ukai_logo.png" alt="UKAI-OSK" style="height: 28px; width: auto; border-radius: 8px; vertical-align: middle; margin-right: 6px;">
+      <img src="/Ukai_logo.PNG" alt="UKAI-OSK" style="height: 28px; width: auto; border-radius: 8px; vertical-align: middle; margin-right: 6px;">
       UKAI<span>-OSK</span>
     </a>
     <button class="mobile-menu-close" onclick="closeMobileMenu()">✕</button>
