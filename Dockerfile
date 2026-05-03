@@ -8,14 +8,13 @@ RUN apt-get update && apt-get install -y \
     zip \
     unzip \
     nginx \
-    gettext-base \
     && docker-php-ext-configure gd --with-jpeg --with-webp \
     && docker-php-ext-install gd pdo pdo_mysql mysqli zip
 
 COPY . /var/www/html/
 
 RUN echo 'server { \
-    listen ${PORT}; \
+    listen 80; \
     root /var/www/html; \
     index index.php index.html; \
     location / { try_files $uri $uri/ /index.php?$query_string; } \
@@ -25,8 +24,10 @@ RUN echo 'server { \
     include fastcgi_params; \
     fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name; \
     } \
-    }' > /etc/nginx/sites-available/default
+    }' > /etc/nginx/sites-enabled/default
 
 RUN chown -R www-data:www-data /var/www/html
 
-CMD bash -c "envsubst '\$PORT' < /etc/nginx/sites-available/default > /etc/nginx/sites-enabled/default && php-fpm -D && nginx -g 'daemon off;'"
+EXPOSE 80
+
+CMD bash -c "php-fpm -D && nginx -g 'daemon off;'"
