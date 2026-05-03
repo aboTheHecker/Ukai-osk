@@ -9,7 +9,7 @@
   letter-spacing: .3px;
   background: var(--white);
 ">
-  <a href="/UKAI-OSK/admin/dashboard.php" style="text-decoration:none; color:var(--muted);">UKAI-OSK</a>
+  UKAI-OSK
   &mdash; Pre-loved. Sustainable. Yours. &copy; <?= date('Y') ?>
 </footer>
 </body>
