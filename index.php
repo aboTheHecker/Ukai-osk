@@ -69,6 +69,29 @@ body {
   text-decoration: none;
 }
 .nav-logo span { color: var(--accent); }
+
+/* ── NAV BRAND (logo + text) ── */
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+.nav-brand-logo {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+.nav-brand-text {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  color: var(--text);
+  letter-spacing: -0.5px;
+}
+.nav-brand-text span { color: var(--accent); }
 .nav-links { display: flex; align-items: center; gap: 8px; }
 .nav-link {
   padding: 8px 16px;
