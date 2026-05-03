@@ -544,11 +544,10 @@ footer p { font-size: 12px; }
 
 <!-- NAVBAR -->
 <nav class="nav">
-  <a class="mobile-menu-brand" href="index.php">
+  <a class="mobile-menu-brand" href="products.php">
       <img src="/Ukai_logo.PNG" alt="UKAI-OSK" style="height: 28px; width: auto; border-radius: 8px; vertical-align: middle; margin-right: 6px;">
-      <a class="nav-logo" href="index.php">UKAI<span>-OSK</span></a>
     </a>
-  
+  <a class="nav-logo" href="index.php">UKAI<span>-OSK</span></a>
   <div class="nav-links">
     <a class="nav-link" href="#categories">Categories</a>
     <a class="nav-link" href="#how">How It Works</a>
