@@ -13,7 +13,7 @@ if (isset($_SESSION['user_id'])) {
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Create Account — UKAI-OSK</title>
-<link rel="icon" type="image/png" href="../Ukai_logo.png">
+<link rel="icon" type="image/png" href="/Ukai_logo.PNG">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>

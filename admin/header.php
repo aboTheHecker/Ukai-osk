@@ -638,7 +638,7 @@ select.field-input { cursor: pointer; }
 <aside class="sidebar" id="sidebar">
   <div class="sidebar-brand">
     <a class="sidebar-brand-logo" href="dashboard.php">
-      <img class="sidebar-brand-img" src="../Ukai_logo.png" alt="UKAI-OSK">
+      <img class="sidebar-brand-img" src="/Ukai_logo.PNG" alt="UKAI-OSK">
       <span class="sidebar-brand-text">UKAI<span>-OSK</span></span>
     </a>
     <div class="sidebar-brand-tag">Admin Panel</div>
