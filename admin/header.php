@@ -668,11 +668,6 @@ select.field-input { cursor: pointer; }
         }
       ?>
     </a>
-
-    <div class="sidebar-section-label">Settings</div>
-    <a class="nav-item" href="../index.php" target="_blank">
-      <span class="icon">🛒</span> View Shop
-    </a>
   </nav>
 
   <div class="sidebar-footer">
